@@ -14,17 +14,20 @@ app.use(bodyParser.urlencoded({
 
 app.use(express.static("public"));
 
-// mongoose.connect("mongodb://localhost:27017/todoListDB", {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   useFindAndModify: false
-// });
-mongoose.connect("mongodb+srv://prashant-recs:abcdefij@cluster0.pjgbg.mongodb.net/todoListDB",{
+mongoose.connect("mongodb://localhost:27017/todoListDB", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false
+});
+/* If you have mongodb cluster running use this code
+const username= " ";
+const password =" ";
+mongoose.connect("mongodb+srv://"+username+":"+password+"@cluster0.pjgbg.mongodb.net/todoListDB",{
   useNewUrlParser:true,
   useUnifiedTopology:true,
   useFindAndModify:false
 });
-
+*/
 const itemsSchema = mongoose.Schema({
   name: String
 });
