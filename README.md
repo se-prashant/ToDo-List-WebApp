@@ -1,5 +1,5 @@
 # ToDo-List-WebApp
-
+A ToDo app With CRUD functionalities.
 ## Checkout this website here <a href="https://fierce-sands-29252.herokuapp.com/"> :link: </a>
 
 #### Download packages - npm install
